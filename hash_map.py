@@ -4,7 +4,7 @@ from linked_list import Node, LinkedList
 class HashMap: 
     def __init__(self, size):
         self.array_size = size 
-        self.array = [LinkedList() for i in range(self.array_size)]
+        self.array = [ LinkedList(None) for i in range(size)]
         
     def hash(self, key):
         return sum(key.encode())
@@ -16,6 +16,7 @@ class HashMap:
         array_index = self.compress(self.hash(key))
         load = Node([key, value])
         array_list = self.array[array_index]
+
         for item in array_list: 
             if key == item[0]:
                 item[1] = value

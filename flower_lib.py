@@ -8,7 +8,8 @@ flower_definitions = [
   ['magnolia', 'dignity'],
   ['morning glory', 'unrequited love'],
   ['periwinkle', 'new friendship'],
-  ['poppy', 'rest'], ['rose', 'love'],
+  ['poppy', 'rest'],
+  ['rose', 'love'],
   ['snapdragon', 'grace'], 
   ['sunflower', 'longevity'], 
   ['wisteria', 'good luck']
